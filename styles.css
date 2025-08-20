@@ -13,6 +13,11 @@
     /* Layout*/
     grid-row: 1 / -1;
     grid-column: 1 / 2;
+    display: grid;
+    grid-template-rows: repeat(auto);
+    gap: 12px;
+    
+    padding: 12px;
 
     /* Typography */
     color: white;
@@ -36,3 +41,8 @@
     background-color: lightpink;
 }
 
+ul {
+    list-style: none;
+    padding: 0px;
+    margin: 0px;
+}
