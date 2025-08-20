@@ -1,24 +1,38 @@
+* {
+    margin: 0px;
+}
+
 .container {
+    /* Layout*/
     display: grid;
     grid-template-columns: 1fr 4fr;
     grid-template-rows: 0.3fr 0.5fr 6fr;
 }
 
 .sidebar {
-    background-color: rgb(73, 129, 177);
+    /* Layout*/
     grid-row: 1 / -1;
     grid-column: 1 / 2;
+
+    /* Typography */
+    color: white;
+
+    /* Visuals */
+    background-color: rgb(25, 146, 212);
 }
 
 .header {
+    /* Visuals */
     background-color: aquamarine;
 }
 
 .sub-header {
+    /* Visuals */
     background-color: aqua;
 }
 
 .body {
+    /* Visuals */
     background-color: lightpink;
 }
 
