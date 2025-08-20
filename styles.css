@@ -1,0 +1,24 @@
+.container {
+    display: grid;
+    grid-template-columns: 1fr 4fr;
+    grid-template-rows: 0.3fr 0.5fr 6fr;
+}
+
+.sidebar {
+    background-color: rgb(73, 129, 177);
+    grid-row: 1 / -1;
+    grid-column: 1 / 2;
+}
+
+.header {
+    background-color: aquamarine;
+}
+
+.sub-header {
+    background-color: aqua;
+}
+
+.body {
+    background-color: lightpink;
+}
+
