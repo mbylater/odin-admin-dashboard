@@ -2,12 +2,18 @@
     margin: 0px;
 }
 
+body {
+  font-family: 'Roboto', sans-serif;
+}
+
 .container {
     /* Layout*/
     display: grid;
     grid-template-columns: 1fr 4fr;
     grid-template-rows: 0.3fr 0.5fr 6fr;
 }
+
+/* SIDEBAR */
 
 .sidebar {
     /* Layout*/
@@ -26,6 +32,15 @@
     background-color: rgb(25, 146, 212);
 }
 
+
+.material-icons {
+    width: 24px;
+    height: 24px;
+    color: white;
+}
+
+/* HEADER */
+
 .header {
     /* Visuals */
     background-color: aquamarine;
@@ -36,6 +51,7 @@
     background-color: aqua;
 }
 
+
 .body {
     /* Visuals */
     background-color: lightpink;
@@ -45,4 +61,22 @@ ul {
     list-style: none;
     padding: 0px;
     margin: 0px;
+}
+
+/* AVATARS & ICONS */
+
+.avatar {
+    width: 24px;
+    height: 24px;
+}
+
+.avatar-large {
+    width: 48px;
+    height: 48px;
+}
+
+.material-icons.black {
+    width: 24px;
+    height: 24px;
+    color: black;
 }
