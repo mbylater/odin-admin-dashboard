@@ -48,7 +48,10 @@ body {
     /* Layout*/
     display: grid;
     grid-template-columns: 1fr 1fr;
-    padding: 12px;
+    padding-top: 12px;
+    padding-bottom: 12px;
+    padding-left: 24px;
+    padding-right: 24px;
     align-items: center;
     gap: 12px;
     /* Visuals */
@@ -56,11 +59,13 @@ body {
 }
 
 .header-left {
+    /* Layout*/
     display: grid;
     grid-template-columns: 32px auto;
 }
 
 #search_field {
+    /* Layout*/
     grid-row: 1 / 2;
     grid-column: 2 / 3;
     background-color: rgb(235, 235, 235);
@@ -71,6 +76,7 @@ body {
 }
 
 .header-right {
+    /* Layout*/
     display: grid;
     grid-template-columns: auto auto auto;
     gap: 12px;
@@ -78,11 +84,67 @@ body {
     justify-content: end;
 }
 
+
+/* SUBHEADER */
+
 .sub-header {
+    /* Layout*/
+    display: grid;
+    grid-template-columns: auto auto;
+    align-items: left;
+    padding-top: 12px;
+    padding-bottom: 12px;
+    padding-left: 24px;
+    padding-right: 24px;
     /* Visuals */
     background-color: white;
 }
 
+.sub-header-left {
+    display: grid;
+    grid-template-columns: 48px auto;
+    grid-template-rows: 24px 24px;
+    align-items: center;
+    column-gap: 12px;
+}
+
+.hi {
+    grid-column: 2 / 3;
+    grid-row: 1 /2;
+}
+
+.user-name{
+    grid-column: 2 / 3;
+    grid-row: 2 / 3;
+}
+
+.avatar-large {
+    width: 48px;
+    height: 48px;
+    grid-row: span 2;
+}
+
+.sub-header-right {
+    display: grid;
+    grid-template-columns: auto auto auto;
+    gap: 12px;
+    align-items: center;
+    justify-content: end;
+}
+
+button {
+    background-color: rgb(25, 146, 212);
+    color: white;
+    padding-left: 16px;
+    padding-right: 16px;
+    padding-top: 8px;
+    padding-bottom: 8px;
+    border: 0px;
+    border-radius: 8px;
+    width: 120px;
+}
+
+/* MAIN */
 
 .main {
     /* Visuals */
@@ -100,11 +162,6 @@ ul {
 .avatar {
     width: 24px;
     height: 24px;
-}
-
-.avatar-large {
-    width: 48px;
-    height: 48px;
 }
 
 .material-icons {
