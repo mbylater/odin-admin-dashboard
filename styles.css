@@ -170,7 +170,7 @@ button {
     display: grid;
     grid-template-columns: repeat(2, 1fr);
     grid-template-rows: repeat(3, auto);
-    gap: 12px;
+    gap: 16px;
 }
 
 .card {
@@ -202,8 +202,49 @@ button {
     justify-content: end;
 }
 
+/* RIGHT */
+
 .body-right {
     grid-column: 2 / 3;
+    display: grid;
+    grid-template-columns: auto;
+    gap: 16px;
+}
+
+.announcement-cards {
+    display: grid;
+    grid-template-rows: auto;
+    background-color: white;
+    border-radius: 12px;
+    padding: 12px;
+    gap: 12px;
+    box-shadow: 0 8px 8px -8px rgba(0,0,0,0.5);
+}
+
+.announcement {
+    display: grid;
+    gap: 8px;
+}
+
+.user-cards {
+    display: grid;
+    grid-template-rows: auto;
+    background-color: white;
+    border-radius: 12px;
+    padding: 12px;
+    gap: 12px;
+    box-shadow: 0 8px 8px -8px rgba(0,0,0,0.5);
+}
+
+.trending-card {
+    display: grid;
+    grid-template-columns: 24px auto;
+    gap: 12px;
+    align-items: center;
+}
+
+.user-handle {
+    font-weight: 500;
 }
 
 
